@@ -12,3 +12,23 @@ Single threaded means: Javascript can execute one line at a time.
 Synchronous means: At particular order
 
 {**Java script can execute single line at a time at a specific order**}
+
+
+# Execution (Execution Context)
+Call stack maintain the order of execution of Execution Context.
+
+Call Stack: Execution Context Stack, Program Stack, Control Stack, Runtime Stack, Machine Stack.
+
+
+```
+var n = 3;
+function square(num){
+	var ans = num * num;
+	return ans;
+}
+
+var square1 = square(n);
+var square2 = square(4);
+```
+
+See the execution in : [[ExecutionDemo]]
