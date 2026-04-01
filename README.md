@@ -42,3 +42,13 @@ Hoisting is a phenomena in javascript by which you can access variable even befo
 3. The arrow function will look like behaving the same as var variables so during first phase arrow function will also have the undefined initially.
 4. But if the function is not arrow if it is declare with function keyword then at first phage itself it will store the entire function body in memory.
 
+# Temporal DeadZone
+
+Let suppose we have a variable with let or const so they can't not be accessed before they are initialised but they won't give you error like they are not present in the program instead you will get a (reference error that the variable is not initiated). so if we are accessing it before initialisation so from the line where we are accessing till they are initialised it stay in temporal deadzone.
+Temporal deadzone is a place/phase between accessing of the variable till its initialisation.
+
+Reference error: So like if we are accessing x and it is not declare so it will give reference error because x is not define.
+	same error when we try to access a let/const before initialising it but with different message that the variable is not initialised.
+
+
+So let variables are not present inside global space they maintain their separate space in the memory, so we also won't be able to access with window. here also with this keyword
