@@ -52,3 +52,22 @@ Reference error: So like if we are accessing x and it is not declare so it will 
 
 
 So let variables are not present inside global space they maintain their separate space in the memory, so we also won't be able to access with window. here also with this keyword
+
+
+# Block Scope
+Block scope are the set of statement put together to run where a single statement use to run.
+
+Like if i have a if condition then as we know we can write a single condition and then a line to be executed based on that condition so instead if we want to run multiple statement on that condition we simply write it inside a block using curly bracket.
+
+```
+if(true) a=5;
+
+
+instead if we need
+if(true){
+	a=5;
+	b=10;
+	c=20;
+	console.log("Hello)
+}
+```
