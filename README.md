@@ -71,3 +71,9 @@ if(true){
 	console.log("Hello)
 }
 ```
+
+# Closures
+Function with its lexical scope bundled together makes a closure.
+
+Lexical scope:
+	Lexical scope is basically the scope of its parent for any variable.
